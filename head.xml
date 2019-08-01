@@ -1,0 +1,100 @@
+    <!-- Thẻ link -->
+    <link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+    <link expr:href='data:blog.url' rel='canonical'/>
+    <link href='http://www.blogger.com/profile/06007517518495407327' rel='me'/>
+    <link expr:content='data:blog.homepageUrl' rel='pingback'/>
+    <link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
+    <link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
+    <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+    <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
+    <link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+    <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+    <!-- Thẻ b:if -->
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <title><data:blog.pageTitle/></title>
+      <b:else/>
+      <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+        <title><data:blog.pageName/></title>
+      </b:if>
+    </b:if>
+    <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+      <title>Page Not Found</title>
+    </b:if>
+    <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+      <meta content='noindex' name='robots'/>
+    </b:if>
+    <b:if cond='data:blog.searchLabel'>
+      <meta content='noindex,nofollow' name='robots'/>
+    </b:if>
+    <b:if cond='data:blog.isMobile'>
+      <meta content='noindex,nofollow' name='robots'/>
+    </b:if>
+    <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+      <meta expr:content='data:blog.metaDescription' name='description'/>
+      <b:if cond='data:blog.homepageUrl != data:blog.url'>
+        <meta expr:content='data:blog.pageName' name='keywords'/>
+      </b:if>
+    </b:if>
+    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      <meta content='STARHIEP, Blogger, Template blogspot, Code HTML5, Code CSS3, Code JS, PSD Ảnh bìa Facebook, PSD Mockup, PSD Logo, Ảnh nền, Mở khoá tài khoản Facebook, Rip tài khoản Facebook, Checkpass tài khoản Facebook, Code F12 Facebook' name='keywords'/>
+    </b:if>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:if cond='data:blog.postImageThumbnailUrl'>
+        <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
+      </b:if>
+    </b:if>
+    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+          <b:if cond='data:blog.url'>
+            <meta expr:content='data:blog.url' property='og:url'/>
+          </b:if>
+          <meta expr:content='data:blog.title' property='og:site_name'/>
+          <b:if cond='data:blog.pageName'>
+            <meta expr:content='data:blog.pageName' property='og:title'/>
+          </b:if>
+        </b:if>
+      </b:if>
+    </b:if>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <meta content='article' property='og:type'/>
+      <b:else/>
+      <meta content='website' property='og:type'/>
+    </b:if>
+    <b:if cond='data:blog.postImageUrl'>
+      <meta expr:content='data:blog.postImageUrl' property='og:image'/>
+      <b:else/>
+      <b:if cond='data:blog.postImageThumbnailUrl'>
+        <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+      </b:if>
+    </b:if>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' property='og:description'/>
+      <b:else/>
+      <meta content='STARHIEP là website chia sẻ kiến thức về Blogspot, HTML, CSS, JS, Photoshop, Facebook, và một số thủ thuật khác...' property='og:description'/>
+    </b:if>
+    <!-- Thẻ meta -->
+    <meta charset='UTF-8'/>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+    <meta content='blogger' name='generator'/>
+    <meta content='1 days' name='revisit-after'/>
+    <meta content='general' name='rating'/>
+    <meta content='id' name='geo.country'/>
+    <meta expr:content='data:blog.pageTitle' property='og:title'/>
+    <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+    <meta expr:content='data:blog.title' property='og:site_name'/>
+    <meta content='359757701254774' property='fb:app_id'/>
+    <meta content='100011657834328' property='fb:admins'/>
+    <meta content='STARHIEP' name='Author'/>
+    <meta content='Vietnam' name='geo.placename'/>
+    <meta content='https://www.facebook.com/100011657834328' property='article:author'/>
+    <meta content='all' name='audience'/>
+    <meta content='id_id' property='og:locale'/>
+    <meta content='translate' name='google'/>
+    <meta content='summary' name='twitter:card'/>
+    <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+    <meta content='https://twitter.com/starhiepit' name='twitter:site'/>
+    <meta content='https://twitter.com/starhiepit' name='twitter:creator'/>
+    <meta content='https://twitter.com/starhiepit' name='msvalidate.01'/>
+    <meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot. InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, CNET, Googlebot' name='search engines'/>
