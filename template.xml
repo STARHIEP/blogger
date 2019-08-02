@@ -301,7 +301,7 @@
 
     <div class='b-header'>
       <div class='row'>
-        <b:section class='header' id='header' maxwidgets='3' showaddelement='yes'>
+        <b:section class='header' id='header' showaddelement='no'>
           <b:widget id='Header1' locked='true' title='Hiệp Deep (Tiêu đề)' type='Header' version='1'>
             <b:widget-settings>
               <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-EfIHIKokt4w/XUP28p4PdoI/AAAAAAAAL7M/twEz4BkPmTUwDm-SfJ4EZ2gxxclbwGqiwCK4BGAYYCw/s1600/LOGO%2BH.png</b:widget-setting>
@@ -364,6 +364,50 @@
             </b:if>
           </b:includable>
           </b:widget>
+          <b:widget id='BlogSearch1' locked='true' title='Tìm kiếm Blog này' type='BlogSearch'>
+            <b:includable id='main'>
+    <!-- only display title if it's non-empty -->
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2 class='title'><data:title/></h2>
+    </b:if>
+
+    <div class='widget-content'>
+      <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+          <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+            <tbody>
+              <tr>
+                <td class='gsc-input'>
+                  <input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
+                </td>
+                <td class='gsc-search-button'>
+                  <input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+          </b:widget>
+          <b:widget id='LinkList1' locked='true' title='Menu' type='LinkList'>
+            <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+ <div class='widget-content'>
+   <ul>
+     <b:loop values='data:links' var='link'>
+       <li><a expr:href='data:link.target'><data:link.name/></a></li>
+     </b:loop>
+   </ul>
+   <b:include name='quickedit'/>
+ </div>
+</b:includable>
+          </b:widget>
         </b:section>
       </div>
     </div>
@@ -371,6 +415,19 @@
       <div class='row'>
         <div class='b-post'>
           <b:section class='main' id='main' showaddelement='no'>
+            <b:widget id='HTML1' locked='true' title='' type='HTML'>
+              <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+            </b:widget>
             <b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog' version='1'>
               <b:widget-settings>
                 <b:widget-setting name='commentLabel'>blogger-facebook</b:widget-setting>
@@ -1381,6 +1438,19 @@
             <div id='fb-root'/><script>(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0&quot;;fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));</script>&lt;script&gt;$(&quot;.facebook-tab&quot;).append(&quot;&lt;div class=&#39;fb-comments&#39; data-href=&#39;<data:blog.canonicalUrl/>&#39; data-width=&#39;100%&#39; data-numposts=&#39;5&#39; data-colorscheme=&#39;light&#39;&gt;&lt;/div&gt;&quot;);&lt;/script&gt;
           </b:if>
         </b:includable>
+            </b:widget>
+            <b:widget id='HTML2' locked='true' title='' type='HTML'>
+              <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
             </b:widget>
           </b:section>
         </div>
