@@ -1,0 +1,25 @@
+<b:widget id='HTML901' locked='true' title='Comments system' type='HTML' version='1'>
+  <b:widget-settings>
+    <b:widget-setting name='content'/>
+  </b:widget-settings>
+  <b:includable id='main'>
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:if cond='data:content == &quot;[blogger]&quot;'>
+        <div class='cmm-tabs'>
+          <div data-tab='blogger'><div class='blogger-tab'/></div>
+        </div>
+      </b:if>
+      <b:if cond='data:content == &quot;[facebook]&quot;'>
+        <div class='cmm-tabs'>
+          <div data-tab='facebook'><div class='facebook-tab'/></div>
+        </div>
+      </b:if>
+      <b:if cond='data:content == &quot;[blogger][facebook]&quot;'>
+        <div class='cmm-tabs'>
+          <div data-tab='blogger'><div class='blogger-tab'/></div>
+          <div data-tab='facebook'><div class='facebook-tab'/></div>
+        </div>
+      </b:if>
+    </b:if>
+  </b:includable>
+</b:widget>
