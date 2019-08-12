@@ -1,0 +1,32 @@
+<!-- Footer Social -->
+<b:section class='social-footer' id='social-footer' maxwidgets='1'
+name='Social Footer' showaddelement='yes'>
+   <b:widget id='LinkList20' locked='true' title='Social Media Icons 2'
+type='LinkList' version='1'>
+     <b:widget-settings>
+       <b:widget-setting name='link-
+3'>https://plus.google.com/116751881045193478097</b:widget-setting>
+       <b:widget-setting name='sorting'>NONE</b:widget-setting>
+       <b:widget-setting name='text-1'>twitter</b:widget-setting>
+       <b:widget-setting name='link-
+1'>https://twitter.com/starhiepit</b:widget-setting>
+       <b:widget-setting name='text-0'>facebook</b:widget-setting>
+       <b:widget-setting name='link-
+2'>https://www.youtube.com/channel/UCaFduQDyKPeJF2-KlWhRf7Q</b:widget-
+setting>
+<b:widget-setting name='text-3'>gplus</b:widget-setting>
+<b:widget-setting name='link-
+0'>https://www.facebook.com/737230956486831</b:widget-setting>
+       <b:widget-setting name='text-2'>youtube</b:widget-setting>
+     </b:widget-settings>
+     <b:includable id='main'>
+            <div class='widget-content'>
+              <ul>
+                <b:loop values='data:links' var='link'>
+                  <li><a expr:class='data:link.name'
+expr:href='data:link.target' expr:title='data:link.name'/></li>
+                </b:loop>
+</ul> </div>
+    </b:includable>
+   </b:widget>
+ </b:section>
