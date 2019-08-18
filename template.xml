@@ -113,9 +113,6 @@
     ]]></b:skin>
     <style amp-custom='amp-custom'>
       @import url(&#39;https://fonts.googleapis.com/css?family=Roboto&#39;);
-
-      .jump-link{display:none}
-
       a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
   margin: 0;
   padding: 0;
@@ -302,9 +299,9 @@
     <div class='b-header'>
       <div class='row'>
         <b:section class='header' id='header' showaddelement='no'>
-          <b:widget id='Header1' locked='true' title='Hiệp Deep (Tiêu đề)' type='Header' version='1'>
+          <b:widget id='Header1' locked='true' title='Hi9920 (Tiêu đề)' type='Header' version='1'>
             <b:widget-settings>
-              <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-EfIHIKokt4w/XUP28p4PdoI/AAAAAAAAL7M/twEz4BkPmTUwDm-SfJ4EZ2gxxclbwGqiwCK4BGAYYCw/s1600/LOGO%2BH.png</b:widget-setting>
+              <b:widget-setting name='displayUrl'>http://4.bp.blogspot.com/-kN80M5wRtGI/XVi43AmhKYI/AAAAAAAAADM/LQcyWQbQxasJUq6tHqV5qcNiD7Yx7pRYgCK4BGAYYCw/s1600/LOGO%2BH.jpg</b:widget-setting>
               <b:widget-setting name='displayHeight'>1000</b:widget-setting>
               <b:widget-setting name='sectionWidth'>790</b:widget-setting>
               <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -395,6 +392,37 @@
   </b:includable>
           </b:widget>
           <b:widget id='LinkList1' locked='true' title='Menu' type='LinkList'>
+            <b:widget-settings>
+              <b:widget-setting name='text-10'>_Sub 3</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-1'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-13'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-2'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-12'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-0'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-11'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-10'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='text-9'>_Sub 2</b:widget-setting>
+              <b:widget-setting name='link-9'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='text-8'>_Sub 1</b:widget-setting>
+              <b:widget-setting name='link-7'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-8'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-5'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-6'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-3'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='link-4'>javascript:0;</b:widget-setting>
+              <b:widget-setting name='text-1'>Tip</b:widget-setting>
+              <b:widget-setting name='text-0'>Home</b:widget-setting>
+              <b:widget-setting name='text-3'>_Tip 2</b:widget-setting>
+              <b:widget-setting name='text-2'>_Tip 1</b:widget-setting>
+              <b:widget-setting name='text-5'>_Tip 4</b:widget-setting>
+              <b:widget-setting name='text-4'>_Tip 3</b:widget-setting>
+              <b:widget-setting name='text-7'>Game</b:widget-setting>
+              <b:widget-setting name='text-6'>_Tip 5</b:widget-setting>
+              <b:widget-setting name='text-11'>_Sub 4</b:widget-setting>
+              <b:widget-setting name='text-12'>_Sub 5</b:widget-setting>
+              <b:widget-setting name='text-13'>Sitemap</b:widget-setting>
+            </b:widget-settings>
             <b:includable id='main'>
 
 <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
@@ -415,7 +443,10 @@
       <div class='row'>
         <div class='b-post'>
           <b:section class='main' id='main' showaddelement='no'>
-            <b:widget id='HTML1' locked='true' title='' type='HTML'>
+            <b:widget id='HTML1' locked='true' title='Ads' type='HTML'>
+              <b:widget-settings>
+                <b:widget-setting name='content'><![CDATA[<a expr:href='data:blog.homepageUrl'><img src='https://i.imgur.com/TdplGsN.jpg'/></a>]]></b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1464,11 +1495,6 @@
         <div class='footer' id='footer'>Design 2017 -2019 <a expr:href='data:blog.homepageUrl'><data:blog.title/></a></div>
       </div>
     </div>
-
-
-
-
-
     <script>
       $.timeago.settings.strings = {
         prefixAgo: &#39;&#39;,
